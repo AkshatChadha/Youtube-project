@@ -1,0 +1,175 @@
+.header{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(225, 224, 224);
+    z-index: 100;
+
+
+
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.right-section{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    align-items: center;
+margin-right: 20px;
+flex-shrink: 0;}
+
+.upload,.apps,.notifications,.channel {
+    height: 25px;
+    
+    margin-right: 10px;
+}
+
+.channel{
+    height: 30px;
+    border-radius: 100%;
+}
+.middle-section {
+   
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 35px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+   
+}
+
+.searchbox{
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+    width: 0px;
+    
+
+}
+
+.searchbox::placeholder{
+    
+    font-size: 16px;
+
+}
+
+.search-button,
+.voice-search-button,
+.icon-container,
+.notifications-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.search-button {
+    height: 40px;
+    width: 60px;
+    background-color: rgb(241, 238, 238);
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    border-radius: 2px;
+    margin-left: -4px;
+    margin-right: 10px;
+   
+
+    
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.icon-container .tooltip,
+.notifications-div .tooltip{
+   
+    color: white;
+    position: absolute;
+    background-color: rgb(92, 92, 92);
+    padding: 4px 8px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+    
+}
+
+.search-button:hover  .tooltip,
+.voice-search-button:hover .tooltip,
+.icon-container:hover .tooltip,
+.notifications-div:hover .tooltip{
+    opacity: 1;
+}
+
+.search {
+    height: 25px;
+    
+
+}
+
+.voice-search{
+    height: 25px;
+    
+}
+
+.voice-search-button {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: none;
+    background-color: rgb(241, 238, 238);
+
+
+}
+
+.menu {
+    height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.logo {
+    height: 30px;
+}
+
+.notifications-div{
+    position: relative;
+}
+
+.notification-count{
+    position: absolute;
+   border-radius: 10px;
+   background-color: rgba(227, 6, 6, 0.932);
+   color: white;
+   padding: 1px;
+   font-size: 11px;
+   top: 0px;
+   right: 4px;
+   padding: 1px 6px;
+}
+
+
